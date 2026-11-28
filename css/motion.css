@@ -23,7 +23,6 @@
 
 /* Cards lift a little on hover (only after they've been revealed) */
 .skill-card.done:hover,
-.connect.done:hover,
 .project-featured.done:hover {
   transform: translateY(-4px);
   border-color: var(--line-dash);
@@ -55,7 +54,10 @@
   .hero-text > *, .hero-photo { animation: none; }
   .card-glow::before { display: none; }
   .skill-card.done:hover,
-  .connect.done:hover,
   .project-featured.done:hover,
-  .social-list a:hover { transform: none; }
+  .copy-btn:hover,
+  .social-icons a:hover,
+  .social-icons a:hover img,
+  .btn-send:hover svg { transform: none; }
+  .status-dot::after { animation: none; }
 }

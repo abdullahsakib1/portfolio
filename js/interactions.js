@@ -20,12 +20,13 @@
 
   const email = "abdullahsakiib@gmail.com";
 
+  // The button is just an icon, so the tooltip text (data-tip) carries the message
   function showCopied() {
-    copyButton.textContent = "✓ Copied";
     copyButton.classList.add("copied");
+    copyButton.setAttribute("data-tip", "Copied!");
     setTimeout(() => {
-      copyButton.textContent = "Copy email";
       copyButton.classList.remove("copied");
+      copyButton.setAttribute("data-tip", "Copy email");
     }, 1800);
   }
 
