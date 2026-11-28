@@ -11,6 +11,13 @@
   margin-top: 2.5rem;
 }
 
+/* ---- Contact background: blue at 85% (theme navy, slightly dark) --- */
+/* The section is .section-dark (#0e1f4a). 70% looked grey and mismatched
+   the theme, so: 85% of that navy mixed with 15% white = #324165 —
+   same navy family as the site, darker than 70%, lighter than 100%.
+   Scoped to #contact so nothing else changes. */
+#contact { background: #324165; }
+
 /* ---- Left side ---------------------------------------------------- */
 
 .contact-info { display: flex; flex-direction: column; }
